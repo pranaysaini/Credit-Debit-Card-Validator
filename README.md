@@ -58,6 +58,8 @@ int main() {
 		    odd-numbered digit starting from the right.
 		    */
 
+           // cout;
+
         
         for (int i = len - 1; i >= 0; i = i - 2) {
             doubleEvenSum += (cardNum[i] - 48);
@@ -65,10 +67,10 @@ int main() {
         
         /* 
         Checking whether the final "doubleEvenSum" is a multiple of 10 is step three.
-        If so, the credit card number is valid. Alternatively, no.
+        If so, the credit card number is valid. Otherwise, no.
         */
          
-        cout << (doubleEvenSum % 10 == 0 ? "Card Number is Valid!" : "Card Number is not Valid!") << endl;
+        cout << (doubleEvenSum % 10 == 0 ? "Card Number is Valid!" : "Card Number is Invalid!") << endl;
         
         continue;        
     }
